@@ -119,7 +119,8 @@ function createDiv() {
 
 let arr = [];
 
-mapboxgl.accessToken = `${CLIENT_SECRET}`;
+mapboxgl.accessToken = `${ACCESS_TOKEN}`;
+
 const map = new mapboxgl.Map({
   container: 'map', // container ID
   style: 'mapbox://styles/mapbox/streets-v11',
