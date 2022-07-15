@@ -107,6 +107,10 @@ function createDiv() {
       userField.innerHTML = userDesignation[i];
     }
 
+    if (userDesignation[i].length == 0) {
+      userField.innerHTML = userCompany[i];
+    }
+
     if (userPhoto[i].length !== 0) {
       document.querySelector(`.img${i}`).src = userPhoto[i];
     }
